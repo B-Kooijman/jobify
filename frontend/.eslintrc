@@ -15,12 +15,7 @@
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "plugins": [
-    "@typescript-eslint",
-    "react",
-    "prettier",
-    "yaml"
-  ],
+  "plugins": ["@typescript-eslint", "react", "prettier", "yaml"],
   "settings": {
     "react": {
       "version": "detect"
@@ -38,11 +33,12 @@
   "rules": {
     // Prevent missing props validation in a React component definition
     "react/prop-types": "off",
-    // enable prettier 
+    // enable prettier
     "prettier/prettier": "error",
     // needed for NextJS's in order to use jsx without react import
     "react/react-in-jsx-scope": "off",
     "no-unused-vars": "error",
-    "jsx-quotes": ["error", "prefer-double"]
+    "jsx-quotes": ["error", "prefer-double"],
+    "@typescript-eslint/explicit-module-boundary-types": "off"
   }
 }
