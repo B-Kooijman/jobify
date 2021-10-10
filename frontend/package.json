@@ -39,7 +39,8 @@
     "next-localization": "^0.10.0",
     "nprogress": "~0.2.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "sass": "^1.42.1"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
