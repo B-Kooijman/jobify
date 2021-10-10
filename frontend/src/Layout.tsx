@@ -68,6 +68,12 @@ const Layout = ({ context }: LayoutProps): JSX.Element => {
       <Head>
         <title>{route?.fields?.pageTitle?.value || 'Page'}</title>
         <link rel="icon" href={`${publicUrl}/favicon.ico`} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       {/*
@@ -82,7 +88,7 @@ const Layout = ({ context }: LayoutProps): JSX.Element => {
       <Navigation />
 
       {/* root placeholder for the app, which we add components to using route data */}
-      <div className="container">
+      <div className="container bla">
         <Placeholder name="jss-main" rendering={route} />
       </div>
     </>
