@@ -11,6 +11,9 @@
 .vs/
 .vscode/
 
+# Local Sitecore tooling? Check whether it should be included in source control.
+.sitecore/
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
