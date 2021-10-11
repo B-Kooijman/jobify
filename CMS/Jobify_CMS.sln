@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{F5243445-01D0-4809-A299-50D46BABB952}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{D3B9EB1E-4BD5-4BC8-8F62-82A60F540EB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{86AB7D68-15D9-4456-8C3E-4993097E5C69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{E201848A-4A00-4420-AEBA-E0D747DDA236}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobify.Project.Website", "src\Project\Website\code\Jobify.Project.Website\Jobify.Project.Website.csproj", "{F874D54C-B5FE-4333-84DD-ED40323FADA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobify.Foundation.Content", "src\Foundation\code\Jobify.Foundation.Content\Jobify.Foundation.Content.csproj", "{6F0C6FC7-80A3-4C90-988B-39C5BC74975F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F874D54C-B5FE-4333-84DD-ED40323FADA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F874D54C-B5FE-4333-84DD-ED40323FADA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F874D54C-B5FE-4333-84DD-ED40323FADA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F874D54C-B5FE-4333-84DD-ED40323FADA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F0C6FC7-80A3-4C90-988B-39C5BC74975F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0C6FC7-80A3-4C90-988B-39C5BC74975F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0C6FC7-80A3-4C90-988B-39C5BC74975F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0C6FC7-80A3-4C90-988B-39C5BC74975F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E201848A-4A00-4420-AEBA-E0D747DDA236} = {F5243445-01D0-4809-A299-50D46BABB952}
+		{F874D54C-B5FE-4333-84DD-ED40323FADA1} = {E201848A-4A00-4420-AEBA-E0D747DDA236}
+		{6F0C6FC7-80A3-4C90-988B-39C5BC74975F} = {D3B9EB1E-4BD5-4BC8-8F62-82A60F540EB0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A09382D-F46E-49C7-9F61-B22DB365879C}
+	EndGlobalSection
+EndGlobal
