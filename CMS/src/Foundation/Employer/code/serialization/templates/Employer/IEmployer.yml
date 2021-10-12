@@ -1,22 +1,27 @@
 ﻿---
-ID: "4b2ff096-08b8-41b8-8ac1-597329d3d5dc"
-Parent: "44f8cf31-3612-4be3-9960-09dc23f76fb9"
+ID: "52e4c818-4f21-4fce-8b51-1705b6fdc94f"
+Parent: "1626b349-e57c-4330-a1f2-058325957f5f"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Foundation/Vacancy/IVacancy
+Path: /sitecore/templates/Foundation/Employer/IEmployer
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: Office/32x32/user.png
+  Value: business/32x32/businessmen.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Value: |
     {1930BBEB-7805-471A-A3BE-4858AC7CF696}
-    {69E6AED2-6EBC-4469-8CD6-D632C410CDDA}
-    {4A15EAC9-4E20-4DA5-ADCF-05B2FD7A004E}
-    {3CAA2C07-07D7-4159-B155-C508406F9219}
+    {707B62C2-3302-4C05-B4B8-B004D254A30D}
+    {AFCE1E0E-C99C-438C-858F-14AA56A02EB8}
+    {150455E7-7A33-4914-BF51-94F6DE71BA70}
+    {E4EF4145-487D-4040-B2D2-500FE7E13ABF}
+    {7C867212-E982-4732-9449-EB72CDBD19BC}
+- ID: "6fd695e7-7f6d-4ca5-8b49-a829e5950ae9"
+  Hint: __Subitems Sorting
+  Value: 
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{BC0BAC38-1117-471C-821A-098790A07914}"
+  Value: "{FA07A0DB-4DDC-445F-8BD9-960172D68BB2}"
 Languages:
 - Language: en
   Versions:
@@ -24,7 +29,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20211010T072610Z
+      Value: 20211010T075507Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -35,11 +40,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "242f246e-d82a-48f3-9ed0-f57fa510c6ea"
+      Value: "8d970cbe-d720-41bc-91c3-f37c3c3eeece"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211012T072642Z
+      Value: 20211012T072942Z

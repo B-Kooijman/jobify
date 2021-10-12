@@ -1,22 +1,17 @@
 ﻿---
-ID: "4b2ff096-08b8-41b8-8ac1-597329d3d5dc"
-Parent: "44f8cf31-3612-4be3-9960-09dc23f76fb9"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Foundation/Vacancy/IVacancy
+ID: "eb48f4d3-eb91-4ce8-884c-334977ad2453"
+Parent: "90bc59d9-d3e5-414b-838b-82c93a734fac"
+Template: "90bc59d9-d3e5-414b-838b-82c93a734fac"
+Path: /sitecore/templates/Foundation/Employer/data/Employer Folder/__Standard Values
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: Office/32x32/user.png
-- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
-  Hint: __Base template
+  Value: Business/32x32/businessman.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
   Value: |
-    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
-    {69E6AED2-6EBC-4469-8CD6-D632C410CDDA}
-    {4A15EAC9-4E20-4DA5-ADCF-05B2FD7A004E}
-    {3CAA2C07-07D7-4159-B155-C508406F9219}
-- ID: "f7d48a55-2158-4f02-9356-756654404f73"
-  Hint: __Standard values
-  Value: "{BC0BAC38-1117-471C-821A-098790A07914}"
+    {90BC59D9-D3E5-414B-838B-82C93A734FAC}
+    {52E4C818-4F21-4FCE-8B51-1705B6FDC94F}
 Languages:
 - Language: en
   Versions:
@@ -24,7 +19,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20211010T072610Z
+      Value: 20211010T081742Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -35,11 +30,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "242f246e-d82a-48f3-9ed0-f57fa510c6ea"
+      Value: "d3e10a0c-e773-45f7-8782-6de6b72e5ad2"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211012T072642Z
+      Value: 20211010T085027Z

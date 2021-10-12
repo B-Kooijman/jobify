@@ -1,8 +1,18 @@
 ﻿---
-ID: "c51cc214-dd8d-4c74-9c43-44e8de63c7c1"
-Parent: "69e6aed2-6ebc-4469-8cd6-d632c410cdda"
-Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Foundation/Vacancy/base/_VacancyRelated/Vacancy
+ID: "ac47ffec-343e-40d8-81fd-fc65bb5929f6"
+Parent: "c51cc214-dd8d-4c74-9c43-44e8de63c7c1"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/Vacancy/base/_VacancyRelatedOrganisation/Organisation/Related Organisation
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: /sitecore/content/Global Repository/Organisations
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Droplink
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
 Languages:
 - Language: en
   Versions:
@@ -21,11 +31,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f9f8cc8d-72ed-483f-81f9-5566db769ac9"
+      Value: "304a8c4d-ca28-4448-abe3-b106b9735d7e"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211011T091219Z
+      Value: 20211012T072620Z
