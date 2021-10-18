@@ -1,0 +1,20 @@
+// overwrites the default browser stylesheet
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+li {
+    list-style: none;
+}
