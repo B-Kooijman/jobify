@@ -1,0 +1,56 @@
+﻿---
+ID: "4b4a6f62-c313-5468-8ef0-55758e7c3810"
+Parent: "77733efb-5f76-5da7-9090-c5ed29f2277a"
+Template: "c9d437d5-0c94-5d3e-b623-4fa3a3d3838a"
+Path: "/sitecore/content/jobify/home/styleguide/Page Components/styleguide-jss-styleguide-section-B7FCF54E14D2DDEE96747EE3CC441EBE9A4FE9EE7D90F5ABCCDE076F5B72DBDA43"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Styleguide-FieldUsage-Link-9"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0b5fe86a-a4ea-5d66-9768-a93992084a1e"
+      Hint: internalLink
+      Value: |
+        <link linktype="internal" id="{2A01DBD5-1A73-554E-8A72-E2113F270BD6}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211006T141038Z
+    - ID: "2cf50dcd-38d2-5aba-bbed-074eaf1b29f0"
+      Hint: emailLink
+      Value: |
+        <link text="Send an Email" url="mailto:foo@bar.com" linktype="mailto" />
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FCFDBB96-946A-4D2F-BCCD-5573073FC176}"
+    - ID: "4189f12f-0145-5cd2-8427-163568990c40"
+      Hint: externalLink
+      Value: |
+        <link text="Link to Sitecore" url="https://www.sitecore.com" linktype="external" />
+    - ID: "7333dcec-99d0-5a06-b352-bd8818d7f97c"
+      Hint: paramsLink
+      Value: |
+        <link target="_blank" text="Sitecore Dev Site" title="&lt;a&gt; title attribute" url="https://dev.sitecore.net" class="font-weight-bold" linktype="external" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3f2f680e-9485-4eea-9aba-2b973f1cbaf3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "cf55416a-291d-5647-be5a-8e64637b7f26"
+      Hint: heading
+      Value: General Link
+    - ID: "d9c9b8ca-aed7-50bd-933d-244c4a2af98e"
+      Hint: description
+      Value: <p>A <em>General Link</em> is a field that represents an <code>&lt;a&gt;</code> tag.</p>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211006T141038Z
