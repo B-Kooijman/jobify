@@ -1,18 +1,18 @@
 ﻿---
-ID: "14656268-5d6e-411f-8b9a-439c41b851c5"
+ID: "f2e0d27b-e675-45f5-968b-bce968754554"
 Parent: "547676eb-5f7d-5413-a68d-3a6b56a2cde7"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/jobify/Main Route
+Path: /sitecore/templates/Project/jobify/Employer Route
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: office/32x32/crown.png
+  Value: applications/32x32/form_red.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
-  Value: "{50C3F67D-9A00-516E-9B85-F501186D782C}"
+  Value: "{4CF09FB2-2468-4FB5-A28A-AD09D85B43C3}"
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{206C1A14-EC20-41DA-A29B-48ECCF5A9BAC}"
+  Value: "{D848C3F0-BA4B-437D-A7B6-47CBCD6BF780}"
 Languages:
 - Language: en
   Versions:
@@ -20,7 +20,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20211016T153101Z
+      Value: 20211018T133523Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -31,11 +31,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "535eb512-afcd-4710-9657-35b29d620037"
+      Value: "b09fc42d-ea69-4ed5-9ea4-03309cbfdb0b"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211018T132808Z
+      Value: 20211018T133552Z
