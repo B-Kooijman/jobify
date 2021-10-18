@@ -6,6 +6,7 @@
   "config": {
     "appName": "jobify",
     "rootPlaceholders": [
+      "jss-nav",
       "jss-main"
     ],
     "sitecoreConfigPath": "/App_Config/Include/zzz",
