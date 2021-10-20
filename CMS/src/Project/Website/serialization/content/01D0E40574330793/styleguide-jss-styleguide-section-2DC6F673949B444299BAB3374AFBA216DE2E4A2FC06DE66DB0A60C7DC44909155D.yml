@@ -1,0 +1,40 @@
+﻿---
+ID: "49017a1e-f2fe-556d-abc8-207201d51cf3"
+Parent: "77733efb-5f76-5da7-9090-c5ed29f2277a"
+Template: "0b6bab89-1935-5cd0-ac7e-d084cb82746b"
+Path: "/sitecore/content/jobify/home/styleguide/Page Components/styleguide-jss-styleguide-section-2DC6F673949B444299BAB3374AFBA216DE2E4A2FC06DE66DB0A60C7DC44909155D"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Styleguide-SitecoreContext-1"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211006T141038Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FCFDBB96-946A-4D2F-BCCD-5573073FC176}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4bfab397-bec1-46cc-b1fb-f6c6fd9454aa"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "cf55416a-291d-5647-be5a-8e64637b7f26"
+      Hint: heading
+      Value: Sitecore Context
+    - ID: "d9c9b8ca-aed7-50bd-933d-244c4a2af98e"
+      Hint: description
+      Value: "<p><small>The Sitecore Context contains route-level data about the current context - for example, <code>pageState</code> enables conditionally executing code based on whether Sitecore is in Experience Editor or not.</small></p>"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211006T141038Z

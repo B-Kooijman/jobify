@@ -1,5 +1,4 @@
 import { Text, Field } from '@sitecore-jss/sitecore-jss-nextjs';
-import React from 'react';
 import NextLink from 'next/link';
 
 interface DataSource {
@@ -56,7 +55,7 @@ const MenuItem = (item: Item) => (
 
 const Menu = (menu: Menu) => (
   <ul>
-    {menu?.children.results.map((item: Item) => (
+    {menu?.children?.results?.map((item: Item) => (
       <MenuItem key={item.id} {...item} />
     ))}
   </ul>
@@ -64,7 +63,6 @@ const Menu = (menu: Menu) => (
 
 const NavigationBar = (props: NavigationBarProps): JSX.Element => {
   const { datasource, menu } = props.fields.data || {};
-
   return (
     <nav className="navbar">
       {datasource && <Text tag="span" field={datasource.heading} />}

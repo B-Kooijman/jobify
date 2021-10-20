@@ -1,0 +1,33 @@
+﻿---
+ID: "a21fe12e-05d1-41f4-beb4-f2f481f5c241"
+Parent: "d739aad1-79b3-4089-b5ea-c71823fdcd72"
+Template: "a3396951-0f80-4b05-a9d1-bb8371c3d636"
+Path: /sitecore/content/jobify/home/companies/Microsoft
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211018T133425Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1030e96b-fb3b-47c2-95f8-5c60dea414cc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211018T133436Z

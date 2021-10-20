@@ -1,0 +1,43 @@
+﻿---
+ID: "13b9da6b-0659-5d11-8b5e-bf69571fd766"
+Parent: "77733efb-5f76-5da7-9090-c5ed29f2277a"
+Template: "605b15dd-c2c0-526c-a1cb-45253d3cd958"
+Path: "/sitecore/content/jobify/home/styleguide/Page Components/styleguide-jss-main-ContentBlock-1"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "ContentBlock-1"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "15ef7763-ef11-5cad-8388-c125ef76be1f"
+      Hint: content
+      Value: |
+        <p>This is a live set of examples of how to use JSS. For more information on using JSS, please see <a href="https://jss.sitecore.com" target="_blank" rel="noopener noreferrer">the documentation</a>.</p>
+        <p>The content and layout of this page is defined in <code>/data/routes/styleguide/en.yml</code></p>
+        
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211006T141037Z
+    - ID: "26a4d59f-c20b-594d-a5a1-026a6d5cb876"
+      Hint: heading
+      Value: JSS Styleguide
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FCFDBB96-946A-4D2F-BCCD-5573073FC176}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "10e7ada0-42f3-403c-a583-6898239bfb83"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211006T141037Z

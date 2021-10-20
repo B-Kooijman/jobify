@@ -6,7 +6,7 @@ Path: /sitecore/templates/Project/jobify/Main Route
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: core3/32x32/home_yellow_h.png
+  Value: office/32x32/crown.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Value: "{50C3F67D-9A00-516E-9B85-F501186D782C}"
@@ -31,11 +31,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "bde6add9-4d06-4bd0-9eb1-fd4bfbdf51ef"
+      Value: "535eb512-afcd-4710-9657-35b29d620037"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211016T153129Z
+      Value: 20211018T132808Z

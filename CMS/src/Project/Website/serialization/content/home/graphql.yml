@@ -1,0 +1,76 @@
+﻿---
+ID: "c64dfae1-3246-5c9f-bc14-159008fe701c"
+Parent: "2a01dbd5-1a73-554e-8a72-e2113f270bd6"
+Template: "50c3f67d-9a00-516e-9b85-f501186d782c"
+Path: /sitecore/content/jobify/home/graphql
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{FB82986A-A6CD-53FD-AA1D-BC5036B6979B}"
+              p:after="p[@uid='{5E3FDA95-23A6-517A-98F1-9CD2C2146D59}']"
+              s:rname="ContentBlock"
+              s:ds="{A08B4C40-9EFC-54F9-A0BC-E32E85042FDE}"
+              s:id="{3EEB629B-CB5B-5D0F-AECC-758FFDCF86B2}"
+              s:par=""
+              s:ph="/jss-main" />
+            <r
+              uid="{A9FBC7CC-F00B-58A2-873B-4C70C726476C}"
+              p:after="r[@uid='{FB82986A-A6CD-53FD-AA1D-BC5036B6979B}']"
+              s:rname="GraphQL-Layout"
+              s:id="{7F23CB8D-FCF8-5EA5-8393-A459FAE05299}"
+              s:par=""
+              s:ph="/jss-main" />
+            <r
+              uid="{B6BBD1E2-C0B2-5C34-ADD3-858333393BFD}"
+              p:after="r[@uid='{A9FBC7CC-F00B-58A2-873B-4C70C726476C}']"
+              s:rname="GraphQL-IntegratedDemo"
+              s:ds="{403F4BCB-5CA8-5685-A138-5FDF8E512E98}"
+              s:id="{32204ABE-548C-5EDF-AABD-4285EF7DAF85}"
+              s:par=""
+              s:ph="/jss-main/jss-graphql-layout-{A9FBC7CC-F00B-58A2-873B-4C70C726476C}-0" />
+            <r
+              uid="{4E86EC75-DCF5-57A7-B43C-150ADD6BD099}"
+              p:after="*[1=2]"
+              s:rname="GraphQL-ConnectedDemo"
+              s:ds="{03B15A42-69CF-511B-88A6-F3D3E8C47ADE}"
+              s:id="{1928C1D4-47CB-56E1-902E-5774D8FE8DBD}"
+              s:par=""
+              s:ph="/jss-main/jss-graphql-layout-{A9FBC7CC-F00B-58A2-873B-4C70C726476C}-0" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211006T141037Z
+    - ID: "266aeed9-330b-5b67-bffe-facd0378ecd6"
+      Hint: pageTitle
+      Value: GraphQL | Sitecore JSS
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6329a815-4b9f-49ce-b677-1df873b19957"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211016T150733Z

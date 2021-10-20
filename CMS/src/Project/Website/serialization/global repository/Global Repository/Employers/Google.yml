@@ -1,0 +1,39 @@
+﻿---
+ID: "ccbdd59b-c75c-4149-bcb0-cf010c320027"
+Parent: "416961ca-c6b3-4dff-a176-083f012962c3"
+Template: "52e4c818-4f21-4fce-8b51-1705b6fdc94f"
+Path: /sitecore/content/Global Repository/Employers/Google
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1e6e4fc6-95c8-458f-a233-b8c9b9c328d4"
+      Hint: Text
+      Value: Founded by Larry Page.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211019T124342Z
+    - ID: "615bb7ab-c79e-467e-bdc2-db74ca93a939"
+      Hint: Related Organisation
+      Value: "{8965BAAA-E72F-45EB-A6E3-1C7ED91EF39F}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "13a57dc3-7050-4842-9c73-7aff15f26ab6"
+    - ID: "92b53f13-954a-4d6c-a1ba-22a26fda0de3"
+      Hint: Title
+      Value: Google
+    - ID: "ae23349a-15b1-48c0-b50b-e729c398dc96"
+      Hint: Image
+      Value: |
+        <image mediaid="{455F66B5-BA7D-45B8-95CE-78F9DAE3436A}" alt="google-logo" height="" width="" hspace="" vspace="" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211019T125238Z
+    - ID: "ef465cab-7289-4919-995c-465904ad924e"
+      Hint: SubTitle
+      Value: Another tech company.

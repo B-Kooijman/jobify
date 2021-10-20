@@ -13,10 +13,12 @@ import fs from 'fs';
 import path from 'path';
 import { createDefaultDisconnectedServer } from '@sitecore-jss/sitecore-jss-dev-tools';
 import { config } from '../package.json';
+import { DisconnectedServerOptions } from '@sitecore-jss/sitecore-jss-dev-tools/types/disconnected-server/create-default-disconnected-server';
+import { addMock } from './get-integrated-graphql-mock-data';
 
 const touchToReloadFilePath = 'src/temp/config.js';
 
-const serverOptions = {
+const serverOptions: DisconnectedServerOptions = {
   appRoot: path.join(__dirname, '..'),
   appName: config.appName,
   // Prevent require of ./sitecore/definitions/config.js, because ts-node is running
@@ -24,6 +26,7 @@ const serverOptions = {
   watchPaths: ['./data'],
   language: config.language,
   port: Number(process.env.PROXY_PORT) || 3042,
+  customizeRendering: addMock,
   onManifestUpdated: () => {
     // if we can resolve the config file, we can alter it to force reloading the app automatically
     // instead of waiting for a manual reload. We must materially alter the _contents_ of the file to trigger

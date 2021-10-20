@@ -1,0 +1,51 @@
+﻿---
+ID: "99028ff5-16a5-5858-9b66-476e7f5578d6"
+Parent: "77733efb-5f76-5da7-9090-c5ed29f2277a"
+Template: "068194fb-288c-59c4-8486-8b0ca2f20511"
+Path: "/sitecore/content/jobify/home/styleguide/Page Components/styleguide-jss-styleguide-section-B7A3CAADB68660DA655163219B33BD34F74C9F066347D49C7B8772ADA8CADA0C60"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Styleguide-FieldUsage-Custom-12"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1aacb9a6-99ac-5ff9-8f96-8e0763546d05"
+      Hint: customIntField
+      Value: 31337
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211006T141038Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FCFDBB96-946A-4D2F-BCCD-5573073FC176}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d4776f97-344d-49bb-a419-dd4920c882d7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "cf55416a-291d-5647-be5a-8e64637b7f26"
+      Hint: heading
+      Value: Custom Fields
+    - ID: "d9c9b8ca-aed7-50bd-933d-244c4a2af98e"
+      Hint: description
+      Value: |
+        <p>
+          <small>
+            Any Sitecore field type can be consumed by JSS.
+            In this sample we consume the <em>Integer</em> field type.<br />
+            <strong>Note:</strong> For field types with complex data, custom <code>FieldSerializer</code>s may need to be implemented on the Sitecore side.
+          </small>
+        </p>
+        
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211006T141038Z

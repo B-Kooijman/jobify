@@ -1,0 +1,36 @@
+﻿---
+ID: "d739aad1-79b3-4089-b5ea-c71823fdcd72"
+Parent: "2a01dbd5-1a73-554e-8a72-e2113f270bd6"
+Template: "3e1f39f4-8272-4a55-b413-a38fa6cf3369"
+Path: /sitecore/content/jobify/home/companies
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211016T154317Z
+    - ID: "266aeed9-330b-5b67-bffe-facd0378ecd6"
+      Hint: pageTitle
+      Value: companies
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0c9166d9-f63f-416b-b6ae-18c28a04b9f8"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211018T112448Z
