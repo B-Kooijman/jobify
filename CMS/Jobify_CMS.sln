@@ -14,8 +14,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{86AB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{E201848A-4A00-4420-AEBA-E0D747DDA236}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobify.Project.Website", "src\Project\Website\code\Jobify.Project.Website.csproj", "{F874D54C-B5FE-4333-84DD-ED40323FADA1}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vacancy", "Vacancy", "{87196F53-3295-4CB1-87D2-94D196710991}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{144F1EF5-F6B5-441E-A900-700707DDFC07}"
@@ -36,16 +34,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobify.Foundation.Employer"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobify.Foundation.Application", "src\Foundation\Application\code\Jobify.Foundation.Application\Jobify.Foundation.Application.csproj", "{8B94BA35-D354-4B67-8DAB-06959615FAE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobify.Project.Website", "src\Project\Website\code\Jobify.Project.Website.csproj", "{6E96065D-A4B6-41AB-A9BE-7945E9F3E30C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F874D54C-B5FE-4333-84DD-ED40323FADA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F874D54C-B5FE-4333-84DD-ED40323FADA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F874D54C-B5FE-4333-84DD-ED40323FADA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F874D54C-B5FE-4333-84DD-ED40323FADA1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6F0C6FC7-80A3-4C90-988B-39C5BC74975F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6F0C6FC7-80A3-4C90-988B-39C5BC74975F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F0C6FC7-80A3-4C90-988B-39C5BC74975F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -66,13 +62,16 @@ Global
 		{8B94BA35-D354-4B67-8DAB-06959615FAE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B94BA35-D354-4B67-8DAB-06959615FAE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B94BA35-D354-4B67-8DAB-06959615FAE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E96065D-A4B6-41AB-A9BE-7945E9F3E30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E96065D-A4B6-41AB-A9BE-7945E9F3E30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E96065D-A4B6-41AB-A9BE-7945E9F3E30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E96065D-A4B6-41AB-A9BE-7945E9F3E30C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E201848A-4A00-4420-AEBA-E0D747DDA236} = {F5243445-01D0-4809-A299-50D46BABB952}
-		{F874D54C-B5FE-4333-84DD-ED40323FADA1} = {E201848A-4A00-4420-AEBA-E0D747DDA236}
 		{87196F53-3295-4CB1-87D2-94D196710991} = {D3B9EB1E-4BD5-4BC8-8F62-82A60F540EB0}
 		{144F1EF5-F6B5-441E-A900-700707DDFC07} = {D3B9EB1E-4BD5-4BC8-8F62-82A60F540EB0}
 		{522B14B9-CB7A-40CB-AFB4-6D6232816DEB} = {D3B9EB1E-4BD5-4BC8-8F62-82A60F540EB0}
@@ -83,6 +82,7 @@ Global
 		{5081A443-9887-4073-A94F-B53AD0AC9ABC} = {522B14B9-CB7A-40CB-AFB4-6D6232816DEB}
 		{10EEA7A8-6EBC-4519-865B-79676BF96252} = {5258B0E1-5442-45D0-8F74-CB4AB68A2EB1}
 		{8B94BA35-D354-4B67-8DAB-06959615FAE4} = {144F1EF5-F6B5-441E-A900-700707DDFC07}
+		{6E96065D-A4B6-41AB-A9BE-7945E9F3E30C} = {E201848A-4A00-4420-AEBA-E0D747DDA236}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7A09382D-F46E-49C7-9F61-B22DB365879C}
