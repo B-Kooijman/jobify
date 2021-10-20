@@ -7,6 +7,9 @@ SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: office/32x32/document_notebook.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{87BE5F0E-A942-4803-A8FD-201A5A60BC78}"
 Languages:
 - Language: en
   Versions:
@@ -17,11 +20,11 @@ Languages:
       Value: 20211018T133231Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c4c4da47-1054-4a32-9a09-84da1f1ba0f8"
+      Value: "4beb5e5c-3475-41d0-8f82-d383f6dde156"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211018T133353Z
+      Value: 20211019T105227Z
