@@ -68,8 +68,8 @@ const addVacancyCardsMock = (rendering: any) => {
           value: 'Jobify',
         },
       },
-      vacancies: {
-        children: {
+      item: {
+        vacancies: {
           results: [
             {
               id: 'microsoft-1',

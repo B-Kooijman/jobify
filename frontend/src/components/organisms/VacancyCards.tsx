@@ -40,6 +40,7 @@ type VacancyCardsProps = {
 
 const VacancyCards = (props: VacancyCardsProps): JSX.Element => {
   const { datasource, item } = props.fields.data || {};
+  console.log(props);
 
   return (
     <div>
@@ -56,7 +57,7 @@ const VacancyCards = (props: VacancyCardsProps): JSX.Element => {
                 {...vacancy}
                 image={image}
                 bottomTitle={bottomTitle}
-                url={`${bottomTitle.value}/${vacancy.title.value}`?.toLocaleLowerCase()}
+                url={`${bottomTitle.value}/${vacancy.title.value}`} //TODO: Create FriendlyURl
                 key={vacancy?.id}
               />
             );
