@@ -25,6 +25,25 @@
       {
         "name": "api-key",
         "path": "/sitecore/system/Settings/Services/API Keys/jobify"
+      },
+      {
+        "name": "dictionary",
+        "path": "/sitecore/content/jobify/jobify Dictionary"
+      },
+      {
+        "name": "global repository",
+        "references": [ "Foundation.*" ],
+        "path": "/sitecore/content/Global Repository"
+      },
+      {
+        "name": "local repository",
+        "references": [ "Foundation.*" ],
+        "path": "/sitecore/content/jobify/Local Repository"
+      },
+      {
+        "name": "content",
+        "references": [ "Foundation.*" ],
+        "path": "/sitecore/content/jobify/home"
       }
     ]
   }
