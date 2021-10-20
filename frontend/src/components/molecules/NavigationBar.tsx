@@ -1,5 +1,4 @@
 import { Text, Field } from '@sitecore-jss/sitecore-jss-nextjs';
-import React from 'react';
 import NextLink from 'next/link';
 
 interface DataSource {

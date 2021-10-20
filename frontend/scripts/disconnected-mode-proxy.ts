@@ -14,57 +14,9 @@ import path from 'path';
 import { createDefaultDisconnectedServer } from '@sitecore-jss/sitecore-jss-dev-tools';
 import { config } from '../package.json';
 import { DisconnectedServerOptions } from '@sitecore-jss/sitecore-jss-dev-tools/types/disconnected-server/create-default-disconnected-server';
+import { addMock } from './get-integrated-graphql-mock-data';
 
 const touchToReloadFilePath = 'src/temp/config.js';
-
-const addNavigationBarMockedGraphQLResult = (rendering: any) => {
-  if (rendering.componentName === 'NavigationBar' && rendering.fields) {
-    rendering.fields = {
-      data: {
-        datasource: {
-          heading: {
-            value: 'Jobify',
-          },
-        },
-        menu: {
-          children: {
-            results: [
-              {
-                id: 'mock-123',
-                url: {
-                  path: '/vacancies',
-                },
-                pageTitle: {
-                  value: 'vacancies',
-                },
-              },
-              {
-                id: 'mock-456',
-                url: {
-                  path: '/companies',
-                },
-                pageTitle: {
-                  value: 'companies',
-                },
-              },
-              {
-                id: 'mock-780',
-                url: {
-                  path: '/employers',
-                },
-                pageTitle: {
-                  value: 'employers',
-                },
-              },
-            ],
-          },
-        },
-      },
-    };
-
-    return rendering;
-  }
-};
 
 const serverOptions: DisconnectedServerOptions = {
   appRoot: path.join(__dirname, '..'),
@@ -74,7 +26,7 @@ const serverOptions: DisconnectedServerOptions = {
   watchPaths: ['./data'],
   language: config.language,
   port: Number(process.env.PROXY_PORT) || 3042,
-  customizeRendering: addNavigationBarMockedGraphQLResult,
+  customizeRendering: addMock,
   onManifestUpdated: () => {
     // if we can resolve the config file, we can alter it to force reloading the app automatically
     // instead of waiting for a manual reload. We must materially alter the _contents_ of the file to trigger
