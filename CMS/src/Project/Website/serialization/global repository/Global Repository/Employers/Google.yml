@@ -8,6 +8,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "148a471e-8d9b-4049-8d64-e90f517fca64"
+      Hint: FriendlyUrl
+      Value: google
     - ID: "1e6e4fc6-95c8-458f-a233-b8c9b9c328d4"
       Hint: Text
       Value: Founded by Larry Page.
@@ -19,21 +22,21 @@ Languages:
       Value: "{8965BAAA-E72F-45EB-A6E3-1C7ED91EF39F}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "13a57dc3-7050-4842-9c73-7aff15f26ab6"
+      Value: "a85846bd-e47d-44ad-8e55-28291559de48"
     - ID: "92b53f13-954a-4d6c-a1ba-22a26fda0de3"
       Hint: Title
       Value: Google
     - ID: "ae23349a-15b1-48c0-b50b-e729c398dc96"
       Hint: Image
       Value: |
-        <image mediaid="{455F66B5-BA7D-45B8-95CE-78F9DAE3436A}" alt="google-logo" height="" width="" hspace="" vspace="" />
+        <image mediaid="{7B011866-8368-47FA-89CD-23112C589127}" />
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211019T125238Z
+      Value: 20211021T115346Z
     - ID: "ef465cab-7289-4919-995c-465904ad924e"
       Hint: SubTitle
       Value: Another tech company.

@@ -2,7 +2,7 @@
 ID: "4c06532a-8570-4733-ab52-18fb7ef09da7"
 Parent: "816d3d5e-2361-45e5-aeef-96595f5f69bd"
 Template: "f2e0d27b-e675-45f5-968b-bce968754554"
-Path: /sitecore/content/jobify/home/employers/Microsoft
+Path: /sitecore/content/jobify/home/employers/*
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
