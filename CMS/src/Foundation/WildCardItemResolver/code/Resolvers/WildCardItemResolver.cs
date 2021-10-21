@@ -51,21 +51,18 @@ namespace Jobify.Foundation.WildCardItemResolver.Resolvers
                     return null;
                 }
 
-                var vacancyFriendlyUrl = urlParts.Last();
-                if (string.IsNullOrEmpty(vacancyFriendlyUrl))
+                var friendlyUrl = urlParts.Last();
+                if (string.IsNullOrEmpty(friendlyUrl))
                 {
                     return null;
                 }
 
-                var companyName = urlParts.Skip(1).First();
-
-                vacancyFriendlyUrl = vacancyFriendlyUrl.ToLower();
+                friendlyUrl = friendlyUrl.ToLower();
                 var index = ContentSearchManager.GetIndex($"sitecore_{Context.Database.Name}_index");
                 using (var context = index.CreateSearchContext())
                 {
                     List<SearchResultItem> results = context.GetQueryable<SearchResultItem>()
-                        .Where(i => i["friendlyurl"] == vacancyFriendlyUrl).ToList();
-                    //.Where(x => x.Paths.Contains(new ID([StartupPathItemID])) && x.TemplateId == new ID([TemplateId]) && x.Name == term).ToList();
+                        .Where(i => i["friendlyurl"] == friendlyUrl).ToList();
 
                     if (results.Any())
                     {
