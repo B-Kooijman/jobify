@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Jobify.Foundation.Vacancy")]
+[assembly: AssemblyTitle("Jobify.Foundation.WildCardItemResolver")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Jobify.Foundation.Vacancy")]
+[assembly: AssemblyProduct("Jobify.Foundation.WildCardItemResolver")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5cd05b03-7f1b-48ba-8712-a648f1488175")]
+[assembly: Guid("a51056e7-94a3-411d-8e27-cf17644e4bd7")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Jobify.Project.Website.Content.module.json" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

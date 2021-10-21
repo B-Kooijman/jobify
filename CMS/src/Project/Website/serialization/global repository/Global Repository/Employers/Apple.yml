@@ -8,6 +8,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "148a471e-8d9b-4049-8d64-e90f517fca64"
+      Hint: FriendlyUrl
+      Value: apple
     - ID: "1e6e4fc6-95c8-458f-a233-b8c9b9c328d4"
       Hint: Text
       Value: Founded by Steve Jobs.
@@ -19,21 +22,21 @@ Languages:
       Value: "{03668C0D-2E3F-4906-B393-023A2E4FAF3C}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "da9b0c80-59b5-49ee-8caa-72f548dc3655"
+      Value: "f7527880-4bbe-4418-bfd3-1498f1c9b9dc"
     - ID: "92b53f13-954a-4d6c-a1ba-22a26fda0de3"
       Hint: Title
       Value: Apple
     - ID: "ae23349a-15b1-48c0-b50b-e729c398dc96"
       Hint: Image
       Value: |
-        <image mediaid="{337511E0-A047-4CB2-BB31-10B929DC8DB9}" alt="apple-logo" height="" width="" hspace="" vspace="" />
+        <image mediaid="{9AEA485B-139D-4759-A8B9-68358FF85250}" />
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211019T125204Z
+      Value: 20211021T115342Z
     - ID: "ef465cab-7289-4919-995c-465904ad924e"
       Hint: SubTitle
       Value: Stylish tech company

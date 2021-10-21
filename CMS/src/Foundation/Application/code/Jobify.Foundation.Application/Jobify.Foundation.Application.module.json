@@ -4,7 +4,7 @@
     "includes": [
       {
         "name": "templates",
-        "references": [ "Jobify.Foundation.Content" ],
+        "references": ["Jobify.Foundation.Content"],
         "path": "/sitecore/templates/Foundation/Application"
       }
     ]
