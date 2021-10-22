@@ -11,7 +11,7 @@ query VacancyCardQuery($language: String!) {
   ) {
     id
     hasChildren
-    vacancies: children(
+    children(
       hasLayout: true
       includeTemplateIDs: "{4B2FF096-08B8-41B8-8AC1-597329D3D5DC}"
       first: 3

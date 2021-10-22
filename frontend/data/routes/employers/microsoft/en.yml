@@ -10,7 +10,7 @@
 
 # Setting an ID is optional, but it will allow referring to this item in internal links
 # the ID can be a app-wide-unique string, or a GUID value.
-id: employers-page
+id: employers-page-microsoft
 
 # Route-level fields are appropriate for page level data like <title> contents
 # Define route level fields in /sitecore/definitions/routes.sitecore
@@ -24,7 +24,11 @@ placeholders:
       fields:
         heading: Jobify
   jss-main:
-    - componentName: LoginForm
+    - componentName: ContentBlock
       fields:
-        heading: Login
+        heading: all your current openings at Microsoft.
+        content: <p>Welcome Satya.</p>
+    - componentName: EmployerCards
+      fields:
+        heading: Take a look at your open positions on Jobify.
         
