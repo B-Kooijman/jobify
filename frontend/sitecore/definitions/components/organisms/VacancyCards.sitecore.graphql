@@ -1,9 +1,18 @@
+fragment friendlyUrl on DetailRoute {
+  friendlyUrl {
+    value
+  }
+}
+
 query VacancyCardQuery($language: String!) {
-  item(path: "/sitecore/content/Global Repository/Vacancies", language: $language) {
+  item(
+    path: "/sitecore/content/Global Repository/Vacancies"
+    language: $language
+  ) {
     id
     hasChildren
     vacancies: children(
-      hasLayout: false
+      hasLayout: true
       includeTemplateIDs: "{4B2FF096-08B8-41B8-8AC1-597329D3D5DC}"
       first: 3
     ) {
@@ -16,6 +25,7 @@ query VacancyCardQuery($language: String!) {
           title {
             value
           }
+					...friendlyUrl
           relatedEmployer {
             targetItem {
               id
@@ -27,6 +37,7 @@ query VacancyCardQuery($language: String!) {
                   alt
                   src
                 }
+                ...friendlyUrl
               }
             }
           }
