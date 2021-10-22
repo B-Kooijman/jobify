@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Jobify.Foundation.WildCardItemResolver.Resolvers
+namespace Jobify.Foundation.WildCardItemResolver.Pipelines
 {
     public class WildCardItemResolver : HttpRequestProcessor
     {

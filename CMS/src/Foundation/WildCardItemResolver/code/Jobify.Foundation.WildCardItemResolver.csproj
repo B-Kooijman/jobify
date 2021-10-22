@@ -241,7 +241,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Config\Include\Jobify.Foundation.WildCardItemResolver\WildCardItemResolver.config" />
-    <Compile Include="Resolvers\WildCardItemResolver.cs" />
+    <Compile Include="Pipelines\LayoutServiceWildCardItemResolver.cs" />
+    <Compile Include="Pipelines\WildCardItemResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
