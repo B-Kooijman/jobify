@@ -7,6 +7,23 @@ SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{E5259A23-DE8B-4DC4-8767-6872F9353DC6}"
+          p:after="*[1=2]"
+          s:id="{999F5C25-8691-5539-BE38-45D969909D4C}"
+          s:ph="jss-main" />
+      </d>
+    </r>
 Languages:
 - Language: en
   Versions:
@@ -26,11 +43,11 @@ Languages:
       Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0c9166d9-f63f-416b-b6ae-18c28a04b9f8"
+      Value: "03c56a5e-60b1-47f9-a20f-8f06c8e9f9ee"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211018T112448Z
+      Value: 20211021T141223Z

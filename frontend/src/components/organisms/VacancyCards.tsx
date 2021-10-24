@@ -1,63 +1,32 @@
-import { Text, Field, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
 import Card from 'components/molecules/Card';
+import { useI18n } from 'next-localization';
+import { CardsProps } from 'src/types/types';
 
-interface DataSource {
-  heading: Field<string>;
-  name: string;
-  id: string;
-}
-
-interface Vacancies {
-  results: [
-    {
-      id: string;
-      title: Field<string>;
-      text: Field<string>;
-      relatedEmployer: {
-        targetItem: {
-          id: string;
-          bottomTitle: Field<string>;
-          image: ImageField;
-        };
-      };
-    }
-  ];
-  pageTitle: {
-    value: string;
-  };
-}
-
-type VacancyCardsProps = {
-  fields: {
-    data: {
-      datasource: DataSource;
-      item: {
-        vacancies: Vacancies;
-      };
-    };
-  };
-};
+type VacancyCardsProps = CardsProps;
 
 const VacancyCards = (props: VacancyCardsProps): JSX.Element => {
-  const { datasource, item } = props.fields.data || {};
-  console.log(props);
-
+  const { t } = useI18n();
+  const { item } = props.fields.data || {};
   return (
     <div>
-      <Text field={datasource?.heading} />
+      <br />
+      <h2>{t('VacanciesText')}</h2>
+      <br />
       <div className="container">
         <div className="row">
-          {item?.vacancies?.results?.map((vacancy) => {
-            {
-              console.log(vacancy);
-            }
-            const { image, bottomTitle } = vacancy?.relatedEmployer?.targetItem || {};
+          {item?.children?.results?.map((vacancy) => {
+            const { image, bottomTitle, friendlyUrl } = vacancy?.relatedEmployer?.targetItem || {};
             return (
               <Card
                 {...vacancy}
                 image={image}
-                bottomTitle={bottomTitle}
-                url={`${bottomTitle.value}/${vacancy.title.value}`} //TODO: Create FriendlyURl
+                bottomLink={{
+                  value: {
+                    text: bottomTitle.value,
+                    href: friendlyUrl.value,
+                  },
+                }}
+                url={`${friendlyUrl.value}/${vacancy.friendlyUrl.value}`}
                 key={vacancy?.id}
               />
             );

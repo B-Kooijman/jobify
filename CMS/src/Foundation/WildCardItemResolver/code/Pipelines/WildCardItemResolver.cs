@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Jobify.Foundation.WildCardItemResolver.Resolvers
+namespace Jobify.Foundation.WildCardItemResolver.Pipelines
 {
     public class WildCardItemResolver : HttpRequestProcessor
     {
@@ -30,7 +30,12 @@ namespace Jobify.Foundation.WildCardItemResolver.Resolvers
             if (newContextItem != null)
             {
                 Context.Item = newContextItem;
+                return;
             }
+
+            //TODO: Handle 404 to override wildcard resolving
+
+            return;
         }
 
         public static Item GetContextItemByWildCard(string urlPath)
@@ -69,6 +74,7 @@ namespace Jobify.Foundation.WildCardItemResolver.Resolvers
                         newContextItem = results.First().GetItem();
                         return newContextItem;
                     }
+
                     return null;
                 }
             }

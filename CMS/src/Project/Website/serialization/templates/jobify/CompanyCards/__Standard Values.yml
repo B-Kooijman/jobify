@@ -1,15 +1,12 @@
 ﻿---
-ID: "1e6e4fc6-95c8-458f-a233-b8c9b9c328d4"
-Parent: "b7941767-a016-484b-a393-0533b4c37600"
-Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Foundation/Content/Content_Text/Content/Text
+ID: "e671a907-4851-570c-96b7-e36c119bed24"
+Parent: "5558a27a-ae7a-59f6-82db-697d6f7e80e5"
+Template: "5558a27a-ae7a-59f6-82db-697d6f7e80e5"
+Path: /sitecore/templates/Project/jobify/CompanyCards/__Standard Values
 SharedFields:
-- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
-  Hint: Type
-  Value: "Single-Line Text"
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 100
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{6C59AE29-D0A1-4B77-9305-0ABAB21D5FE5}"
 Languages:
 - Language: en
   Versions:
@@ -17,22 +14,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20211010T071116Z
+      Value: 20211021T140822Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
-        sitecore\Admin
+        sitecore\JssImport
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\Admin
+        sitecore\JssImport
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "8bb8d4be-e4b7-43f0-af90-b2c91e176ede"
+      Value: "a2661ef1-cae1-483e-9911-ce4c163ef26a"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\Admin
+        sitecore\JssImport
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211022T131056Z
+      Value: 20211021T140822Z

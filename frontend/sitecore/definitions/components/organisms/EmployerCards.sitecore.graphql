@@ -1,0 +1,42 @@
+fragment title on Content_Title {
+  title {
+    value
+  }
+}
+
+query EmployerCardsQuery($language: String!, $wildCardContextItem: String!) {
+  contextItem: item(path: $wildCardContextItem, language: $language) {
+    id
+    ... on IEmployer {
+      ...title
+      text {
+        value
+      }
+      image {
+        src
+      }
+    }
+  }
+
+  search(
+    where: {
+      name: "related_employer_sm"
+      value: $wildCardContextItem
+      AND: { name: "_language", value: $language }
+    }
+  ) {
+    total
+    results {
+      id
+      ... on IVacancy {
+        friendlyUrl {
+          value
+        }
+        ...title
+        text {
+          value
+        }
+      }
+    }
+  }
+}
