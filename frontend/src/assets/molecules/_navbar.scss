@@ -4,6 +4,14 @@ nav.navbar {
   justify-content: flex-start;
   align-items: center;
   font-size: 2rem;
+  margin-bottom: 30px;
+  
+  a {
+    color: var(--color-text);
+    &:hover{
+      color: var(--color-primary);
+    }
+  }
 
   ul {
     display: flex;
