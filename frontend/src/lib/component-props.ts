@@ -10,7 +10,7 @@ import {
 /**
  * Styleguide sitecore context value shape
  */
-export type StyleguideSitecoreContextValue = LayoutServiceContext & {
+export type ISitecoreContextValue = LayoutServiceContext & {
   itemId?: string;
   route: RouteData;
 };
@@ -18,7 +18,7 @@ export type StyleguideSitecoreContextValue = LayoutServiceContext & {
 /**
  * Shared styleguide specimen fields
  */
-export type StyleguideSpecimenFields = {
+export type ISpecimenFields = {
   fields: {
     description: Field<string>;
     heading: Field<string>;
@@ -28,7 +28,7 @@ export type StyleguideSpecimenFields = {
 /**
  * Shared styleguide component props
  */
-export type StyleguideComponentProps = {
+export type IComponentProps = {
   componentFactory: ComponentFactory;
   rendering: ComponentRendering;
   params: ComponentParams;
@@ -40,6 +40,6 @@ export type StyleguideComponentProps = {
  * @example withSitecoreContext()(ContentBlock)
  * @example const { sitecoreContext } = useSitecoreContext()
  */
-export type StyleguideComponentWithContextProps = StyleguideComponentProps & {
-  sitecoreContext: StyleguideSitecoreContextValue;
+export type IComponentWithContextProps = IComponentProps & {
+  sitecoreContext: ISitecoreContextValue;
 };

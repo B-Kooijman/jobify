@@ -8,7 +8,7 @@ import {
   VisitorIdentification,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
-import { StyleguideSitecoreContextValue } from 'lib/component-props';
+import { ISitecoreContextValue } from 'lib/component-props';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
@@ -20,7 +20,7 @@ const publicUrl = getPublicUrl();
 //   const { t } = useI18n();
 
 //   return (
-//     <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom">
+//     <div className="p-3 mb-3 bg-white d-flex flex-column flex-md-row align-items-center px-md-4 border-bottom">
 //       <h5 className="my-0 mr-md-auto font-weight-normal">
 //         <Link href="/">
 //           <a className="text-dark">
@@ -49,7 +49,7 @@ const publicUrl = getPublicUrl();
 // };
 
 type LayoutProps = {
-  context: StyleguideSitecoreContextValue;
+  context: ISitecoreContextValue;
 };
 
 const Layout = ({ context }: LayoutProps): JSX.Element => {
