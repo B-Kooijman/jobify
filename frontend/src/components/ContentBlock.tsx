@@ -1,7 +1,7 @@
 import { Text, RichText, Field } from '@sitecore-jss/sitecore-jss-nextjs';
-import { StyleguideComponentProps } from 'lib/component-props';
+import { IComponentProps } from 'lib/component-props';
 
-type ContentBlockProps = StyleguideComponentProps & {
+type ContentBlockProps = IComponentProps & {
   fields: {
     heading: Field<string>;
     content: Field<string>;

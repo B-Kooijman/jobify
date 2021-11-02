@@ -7,7 +7,7 @@ import {
   ComponentPropsContext,
   handleExperienceEditorFastRefresh,
 } from '@sitecore-jss/sitecore-jss-nextjs';
-import { StyleguideSitecoreContextValue } from 'lib/component-props';
+import { ISitecoreContextValue } from 'lib/component-props';
 import { SitecorePageProps } from 'lib/page-props';
 import { sitecorePagePropsFactory } from 'lib/page-props-factory';
 import { componentFactory } from 'temp/componentFactory';
@@ -24,7 +24,7 @@ const SitecorePage = ({ notFound, layoutData, componentProps }: SitecorePageProp
     return <NotFound />;
   }
 
-  const context: StyleguideSitecoreContextValue = {
+  const context: ISitecoreContextValue = {
     route: layoutData.sitecore.route,
     itemId: layoutData.sitecore.route?.itemId,
     ...layoutData.sitecore.context,
@@ -32,10 +32,7 @@ const SitecorePage = ({ notFound, layoutData, componentProps }: SitecorePageProp
 
   return (
     <ComponentPropsContext value={componentProps}>
-      <SitecoreContext<StyleguideSitecoreContextValue>
-        componentFactory={componentFactory}
-        context={context}
-      >
+      <SitecoreContext<ISitecoreContextValue> componentFactory={componentFactory} context={context}>
         <Layout context={context} />
       </SitecoreContext>
     </ComponentPropsContext>

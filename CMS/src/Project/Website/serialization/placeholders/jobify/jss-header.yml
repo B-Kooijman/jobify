@@ -12,7 +12,7 @@ SharedFields:
   Value: 1
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
-  Value: "{1E290FDC-BC47-560B-8294-115F1EC08AB5}"
+  Value: 
 Languages:
 - Language: en
   Versions:
@@ -31,11 +31,11 @@ Languages:
         sitecore\JssImport
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a65f6405-b6a0-44a1-bd10-e754015ee250"
+      Value: "75ebb584-f5e6-4ece-9e19-d4118f4f2556"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\JssImport
+        sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211006T141039Z
+      Value: 20211101T110545Z

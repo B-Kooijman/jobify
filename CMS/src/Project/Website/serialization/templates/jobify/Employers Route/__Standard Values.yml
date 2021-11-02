@@ -26,29 +26,9 @@ SharedFields:
           key="jss-main"
           md="{E852E825-8312-5AF4-B382-836DD64A1D68}" />
         <p
-          uid="{BB38EC5E-12C1-5E1A-A863-6F8A31BFCA45}"
-          key="jss-tabs"
-          md="{2C07A0AF-32B4-5958-A871-EBF302B415B5}" />
-        <p
-          uid="{AEDF277C-11FF-5637-80D3-86FFF565BB52}"
-          key="jss-graphql-layout"
-          md="{5C33A9F3-C3F8-5565-A80D-3DEDBB349085}" />
-        <p
-          uid="{D470861E-7F8F-5D36-B475-B8173D763F87}"
-          key="jss-styleguide-layout"
-          md="{0EACE43F-9D50-52D2-B3DA-D07D667BE0AA}" />
-        <p
-          uid="{8246BF17-7279-564F-9A06-FCD96A597E42}"
-          key="jss-styleguide-section"
-          md="{2951D233-A210-5C96-BCAE-4AAB454EA573}" />
-        <p
           uid="{37DBBB65-D001-551D-A911-5B8B1366CA16}"
           key="jss-header"
           md="{2A28ECB4-3808-5198-AB81-D69B2A9D7CB9}" />
-        <p
-          uid="{5E3FDA95-23A6-517A-98F1-9CD2C2146D59}"
-          key="jss-reuse-example"
-          md="{593BEDB5-59A1-5797-993B-C4124DC31250}" />
         <r
           ds="{596FB7BD-D0A8-49C7-AD24-B6A3D6946430}"
           id="{C3CD0A33-35DA-5912-9E90-6EE325E2C549}"
@@ -72,11 +52,11 @@ Languages:
       Value: 20211018T081115Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5749fe1f-15f3-475d-bc3b-b7ec1fd6ddb0"
+      Value: "069d5dc7-7da8-48a4-9a8a-eebda4e01782"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211024T120958Z
+      Value: 20211101T110407Z

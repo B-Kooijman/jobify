@@ -1,4 +1,4 @@
-import { Text, Field } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field } from '@sitecore-jss/sitecore-jss-nextjs';
 import NextLink from 'next/link';
 
 interface DataSource {
@@ -65,7 +65,11 @@ const NavigationBar = (props: NavigationBarProps): JSX.Element => {
   const { datasource, menu } = props.fields.data || {};
   return (
     <nav className="navbar">
-      {datasource && <Text tag="span" field={datasource.heading} />}
+      {datasource && (
+        <NextLink href="/">
+          <a>{datasource.heading?.value}</a>
+        </NextLink>
+      )}
       <Menu {...menu} />
     </nav>
   );
