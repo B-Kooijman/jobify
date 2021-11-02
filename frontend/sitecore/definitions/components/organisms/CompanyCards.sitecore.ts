@@ -1,5 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import { CommonFieldTypes, SitecoreIcon, Manifest } from '@sitecore-jss/sitecore-jss-manifest';
+import fs from 'fs';
+
+const query = fs.readFileSync(
+  'src/components/organisms/CompanyCards/CompanyCards.sitecore.graphql',
+  'utf8'
+);
 
 /**
  * Adds the CompanyCards component to the disconnected manifest.
@@ -10,6 +16,7 @@ export default function (manifest: Manifest): void {
   manifest.addComponent({
     name: 'CompanyCards',
     icon: SitecoreIcon.DocumentTag,
+    graphQLQuery: query,
     fields: [{ name: 'heading', type: CommonFieldTypes.SingleLineText }],
     /*
     If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,

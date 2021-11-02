@@ -17,8 +17,8 @@ query CompanyCardsQuery($language: String!) {
       first: 3
     ) {
       results {
-        id
         ... on IEmployer {
+          id
           image {
             src
             alt
