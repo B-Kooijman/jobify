@@ -1,12 +1,12 @@
+import { ImageField } from '@sitecore-jss/sitecore-jss-react';
 import Card from 'components/molecules/Card';
+import CardsContainer from 'components/molecules/CardsContainer';
 import { useI18n } from 'next-localization';
-import { CardsProps } from 'src/types/types';
+import { CompanyCardsQuery, IEmployer } from './CompanyCards.dynamic.graphql';
 
-type CompanyCardsProps = CardsProps;
-
-const CompanyCards = (props: CompanyCardsProps): JSX.Element => {
+const CompanyCards = (props: CompanyCardsQuery): JSX.Element => {
   const { t } = useI18n();
-  const { item } = props.fields.data || {};
+  const companies = props.item?.children.results as IEmployer[];
 
   return (
     <div>
@@ -14,22 +14,19 @@ const CompanyCards = (props: CompanyCardsProps): JSX.Element => {
       <h2>{t('CompaniesText')}</h2>
       <br />
 
-      <div className="container">
-        <div className="row">
-          {item?.children?.results?.map((company) => {
-            const { image, friendlyUrl } = company;
-            return (
-              <Card
-                {...company}
-                text={{ value: '' }}
-                image={image}
-                url={friendlyUrl.value}
-                key={company?.id}
-              />
-            );
-          })}
-        </div>
-      </div>
+      <CardsContainer>
+        {companies?.map(({ title, image, friendlyUrl, id }) => {
+          return (
+            <Card
+              title={{ value: String(title?.value) }}
+              text={{ value: '' }}
+              image={image as ImageField}
+              url={String(friendlyUrl?.value)}
+              key={id}
+            />
+          );
+        })}
+      </CardsContainer>
     </div>
   );
 };
