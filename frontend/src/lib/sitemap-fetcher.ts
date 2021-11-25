@@ -27,7 +27,7 @@ export class SitecoreSitemapFetcher {
     });
 
     this._disconnectedSitemapService = new DisconnectedSitemapService(
-      this.getManifest() as unknown as ManifestInstance
+      (this.getManifest() as unknown) as ManifestInstance
     );
   }
 

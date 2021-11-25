@@ -4,7 +4,7 @@ fragment friendlyUrl on DetailRoute {
   }
 }
 
-query CompanyCardsQuery($language: String!) {
+query CompanyCards($language: String!) {
   item(
     path: "/sitecore/content/Global Repository/Employers"
     language: $language

@@ -1,11 +1,12 @@
+# Editing here does not save the query on the item; copy it back when done!
 fragment title on Content_Title {
   title {
     value
   }
 }
 
-query EmployerCardsQuery($language: String!, $wildCardContextItem: String!) {
-  contextItem: item(path: $wildCardContextItem, language: $language) {
+query EmployerCards($language: String!, $relatedEmployer: String!) {
+    relatedEmployer: item(path: $relatedEmployer, language: $language) {
     id
     ... on IEmployer {
       ...title
@@ -20,19 +21,22 @@ query EmployerCardsQuery($language: String!, $wildCardContextItem: String!) {
 
   search(
     where: {
-      name: "related_employer_sm"
-      value: $wildCardContextItem
+      name: "relatedemployerfullpath_s"
+      value: $relatedEmployer
       AND: { name: "_language", value: $language }
     }
   ) {
     total
-    results {
+    
+    vacancies: results {
       id
       ... on IVacancy {
         friendlyUrl {
           value
         }
-        ...title
+        title {
+          value
+        }
         text {
           value
         }

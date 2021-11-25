@@ -1,5 +1,4 @@
-schema:
-  - './src/temp/GraphQLIntrospectionResult.json'
+schema: './src/temp/GraphQLIntrospectionResult.json'
 documents: 'src/**/*.graphql'
 plugins:
   - typescript

@@ -47,7 +47,7 @@ type NavigationBarProps = GraphQlIntegratedDemoProps;
 
 const MenuItem = (item: Item) => (
   <li>
-    <NextLink href={item.url.path}>
+    <NextLink href={item.url.path || ''}>
       <a>{item.pageTitle.value}</a>
     </NextLink>
   </li>

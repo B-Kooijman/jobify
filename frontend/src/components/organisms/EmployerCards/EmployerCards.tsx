@@ -1,74 +1,96 @@
-import { Field } from '@sitecore-jss/sitecore-jss-nextjs';
-import { ImageFieldValue } from '@sitecore-jss/sitecore-jss-react/types/components/Image';
-import Card from 'components/molecules/Card';
+import {
+  Text,
+  Field,
+  GetStaticComponentProps,
+  GraphQLRequestClient,
+  JSS_MODE_DISCONNECTED,
+  useComponentProps,
+  ComponentRendering,
+} from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  EmployerCardsDocument,
+  EmployerCardsQuery,
+  IEmployer,
+} from './EmployerCards.dynamic.graphql';
 import { useI18n } from 'next-localization';
+import config from 'temp/config';
+import { IVacancy, TextField } from 'components/molecules/NavigationBar.dynamic.graphql';
+import Card from 'components/molecules/Card';
+import CardsContainer from 'components/molecules/CardsContainer';
 
-type EmployerCards = {
-  fields: {
-    data: {
-      contextItem: {
-        title: Field<string>;
-        text: Field<string>;
-        image: ImageFieldValue;
-      };
-      search: {
-        total: number;
-        results: [
-          {
-            id: string;
-            friendlyUrl: Field<string>;
-            title: Field<string>;
-            text: Field<string>;
-          }
-        ];
-      };
-    };
-  };
+const titleKey = 'EmployerIntroductionTitle';
+const textKey = 'EmployerIntroductionText';
+// const globalRepositoryPath = '/sitecore/content/global repository/';
+const globalRepositoryPath = '/sitecore/content/global repository';
+
+const replacementToken = '{0}';
+
+const replaceDictionaryToken = (
+  dictionary: string,
+  replacement: TextField,
+  token = replacementToken
+) => {
+  const { t } = useI18n();
+  return replacement ? t(dictionary)?.replace(token, String(replacement?.value)) : undefined;
 };
 
-const EmployerCards = (props: EmployerCards): JSX.Element => {
-  const { t } = useI18n();
-  const { contextItem, search } = props.fields.data || {};
-  const title =
-    search.total != 0
-      ? search?.total === 1
-        ? t('EmployerIntroductionTitleSingle')?.replace('{0}', contextItem?.title?.value)
-        : t('EmployerIntroductionTitle')
-            ?.replace('{0}', search?.total?.toString())
-            .replace('{1}', contextItem?.title?.value)
-      : null;
+interface EmployerCardsProps {
+  rendering: ComponentRendering;
+}
 
-  const text = t('EmployerIntroductionText')?.replace('{0}', contextItem?.text?.value);
+export default function EmployerCards({ rendering }: EmployerCardsProps): JSX.Element {
+  const data = useComponentProps<EmployerCardsQuery>(String(rendering.uid));
+  const relatedEmployer = data.relatedEmployer as IEmployer;
+  const vacancies = data.search?.vacancies as IVacancy[];
+  const vacanciesText = replaceDictionaryToken(titleKey, relatedEmployer?.title as TextField);
+  const welcomeText = replaceDictionaryToken(textKey, relatedEmployer?.text as TextField);
 
-  console.log(props);
   return (
-    <div>
-      <br />
-      <h1>{text}</h1>
-      <h2>{title}</h2>
-      <div className="container">
-        <div className="row">
-          {search?.results?.map((vacancy) => {
+    <section>
+      {welcomeText && <Text field={{ value: String(welcomeText) }} tag="h2" />}
+      {vacanciesText && <Text field={{ value: String(vacanciesText) }} tag="h3" />}
+      <CardsContainer>
+        {!!vacancies?.length &&
+          vacancies?.map((vacancy: IVacancy) => {
             const { friendlyUrl } = vacancy;
             return (
               <Card
                 {...vacancy}
-                image={{ value: { src: contextItem.image?.src } }}
-                // bottomLink={{
-                //   value: {
-                //     text: bottomTitle.value,
-                //     href: friendlyUrl.value,
-                //   },
-                // }}
-                url={friendlyUrl.value}
+                title={vacancy.title as Field<string>}
+                text={vacancy.text as Field<string>}
+                image={{ value: { src: String(relatedEmployer?.image?.src) } }}
+                url={String(friendlyUrl?.value)}
                 key={vacancy?.id}
+                bottomLink={{ value: { href: '/', text: 'Bekijk vacature' } }}
               />
             );
           })}
-        </div>
-      </div>
-    </div>
+      </CardsContainer>
+      <pre style={{ color: 'blue', fontSize: '12px', background: 'lightGrey' }}>
+        <code>{JSON.stringify(data, null, 1)}</code>
+      </pre>
+    </section>
   );
-};
+}
 
-export default EmployerCards;
+export const getStaticProps: GetStaticComponentProps = async (rendering, layoutData, context) => {
+  if (process.env.JSS_MODE === JSS_MODE_DISCONNECTED) {
+    return null;
+  }
+
+  const graphQLClient = new GraphQLRequestClient(config.graphQLEndpoint, {
+    apiKey: config.sitecoreApiKey,
+  });
+
+  const { path } = context.params || {};
+  const wildCardKey = Array.isArray(path) ? path.join('/') : path;
+  const result = await graphQLClient.request<EmployerCardsQuery>(EmployerCardsDocument, {
+    language: 'en',
+    // relatedEmployer: `${globalRepositoryPath}${wildCardKey}`,
+    relatedEmployer: `${globalRepositoryPath}${layoutData.sitecore.context.itemPath}`,
+  });
+  console.log('CONTEXT', context);
+  console.log('LAYOUT', layoutData.sitecore.context.itemPath);
+  console.log('RESULT', result);
+  return result;
+};

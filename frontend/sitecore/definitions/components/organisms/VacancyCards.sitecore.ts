@@ -3,7 +3,7 @@ import { CommonFieldTypes, SitecoreIcon, Manifest } from '@sitecore-jss/sitecore
 import fs from 'fs';
 
 const query = fs.readFileSync(
-  'src/components/organisms/VacancyCards/VacancyCards.sitecore.graphql',
+  'src/components/organisms/VacancyCards/VacancyCards.dynamic.graphql',
   'utf8'
 );
 
