@@ -412,7 +412,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Jobify.Foundation.WildCardItemResolver\LayoutServiceWildCardItemResolver.config" />
+    <None Include="App_Config\Include\Jobify.Foundation.WildCardItemResolver\LayoutServiceWildCardItemResolver.config.disabled" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
