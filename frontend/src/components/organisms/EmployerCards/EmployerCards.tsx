@@ -20,7 +20,6 @@ import CardsContainer from 'components/molecules/CardsContainer';
 
 const titleKey = 'EmployerIntroductionTitle';
 const textKey = 'EmployerIntroductionText';
-// const globalRepositoryPath = '/sitecore/content/global repository/';
 const globalRepositoryPath = '/sitecore/content/global repository';
 
 const replacementToken = '{0}';
@@ -73,7 +72,7 @@ export default function EmployerCards({ rendering }: EmployerCardsProps): JSX.El
   );
 }
 
-export const getStaticProps: GetStaticComponentProps = async (rendering, layoutData, context) => {
+export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData, context) => {
   if (process.env.JSS_MODE === JSS_MODE_DISCONNECTED) {
     return null;
   }
@@ -83,14 +82,11 @@ export const getStaticProps: GetStaticComponentProps = async (rendering, layoutD
   });
 
   const { path } = context.params || {};
-  const wildCardKey = Array.isArray(path) ? path.join('/') : path;
+  const employerName = Array.isArray(path) && !!path.length ? path[1] : path;
   const result = await graphQLClient.request<EmployerCardsQuery>(EmployerCardsDocument, {
     language: 'en',
-    // relatedEmployer: `${globalRepositoryPath}${wildCardKey}`,
-    relatedEmployer: `${globalRepositoryPath}${layoutData.sitecore.context.itemPath}`,
+    relatedEmployer: `${globalRepositoryPath}/employers/${employerName}`,
   });
-  console.log('CONTEXT', context);
-  console.log('LAYOUT', layoutData.sitecore.context.itemPath);
-  console.log('RESULT', result);
+
   return result;
 };

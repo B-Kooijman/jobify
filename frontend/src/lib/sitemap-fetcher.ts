@@ -8,13 +8,14 @@ import {
 import { GetStaticPathsContext } from 'next';
 import config from 'temp/config';
 import { config as packageConfig } from '../../package.json';
+import { ExtendedGraphQLSitemapService } from './sitemap-service';
 
 export class SitecoreSitemapFetcher {
   private _graphqlSitemapService: GraphQLSitemapService;
   private _disconnectedSitemapService: DisconnectedSitemapService;
 
   constructor() {
-    this._graphqlSitemapService = new GraphQLSitemapService({
+    this._graphqlSitemapService = new ExtendedGraphQLSitemapService({
       endpoint: config.graphQLEndpoint,
       apiKey: config.sitecoreApiKey,
       siteName: config.jssAppName,

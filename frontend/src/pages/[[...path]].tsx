@@ -11,7 +11,9 @@ import { ISitecoreContextValue } from 'lib/component-props';
 import { SitecorePageProps } from 'lib/page-props';
 import { sitecorePagePropsFactory } from 'lib/page-props-factory';
 import { componentFactory } from 'temp/componentFactory';
-import { sitemapFetcher } from 'lib/sitemap-fetcher';
+// import { sitemapFetcher } from 'lib/sitemap-fetcher';
+// import { rootSitemapFetcher } from 'lib/sitemap-fetcher';
+import { employerSitemapFetcher } from 'lib/sitemap-service';
 
 const SitecorePage = ({ notFound, layoutData, componentProps }: SitecorePageProps): JSX.Element => {
   useEffect(() => {
@@ -31,6 +33,7 @@ const SitecorePage = ({ notFound, layoutData, componentProps }: SitecorePageProp
   };
 
   return (
+    // <code>{JSON.stringify(props.layoutData)}</code>
     <ComponentPropsContext value={componentProps}>
       <SitecoreContext<ISitecoreContextValue> componentFactory={componentFactory} context={context}>
         <Layout context={context} />
@@ -52,8 +55,11 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
 
   if (process.env.NODE_ENV !== 'development') {
     // Note: Next.js runs export in production mode
-    const paths = await sitemapFetcher.fetch(context);
 
+    //TODO: Explore custom sitemapfetchers for static page generation.
+    // const paths = await sitemapFetcher.fetch(context);
+    // const paths = await rootSitemapFetcher.fetch(context);
+    const paths = await employerSitemapFetcher.fetch(context);
     return {
       paths,
       fallback: process.env.EXPORT_MODE ? false : 'blocking',
