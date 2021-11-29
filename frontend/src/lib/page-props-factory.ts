@@ -86,6 +86,10 @@ export class SitecorePagePropsFactory {
        * Normal mode
        */
       // Get normalized Sitecore item path
+
+      // if (context?.params) {
+      //   context.params.path = ['employers', '*'];
+      // }
       const path = extractPath(context.params);
 
       // Use context locale if Next.js i18n is configured, otherwise use language defined in package.json
@@ -128,6 +132,7 @@ export class SitecorePagePropsFactory {
         });
       }
     }
+
     return {
       locale,
       layoutData,
