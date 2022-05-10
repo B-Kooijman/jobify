@@ -1,4 +1,4 @@
-import { Button } from "@jobify/core";
+import { ContentBlock } from "@jobify/core";
 import type { MetaFunction } from "@remix-run/node";
 import {
   Links,
@@ -23,7 +23,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Button>"hello"</Button>
+        <ContentBlock fields={{ heading: { value: "foo" }, content: { value: "bla" } }} />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

@@ -31,6 +31,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "@jobify/core": "*",
     "@sitecore-jss/sitecore-jss-nextjs": "^18.0.0",
     "@sitecore-jss/sitecore-jss-tracking": "^18.0.0",
     "bootstrap": "^4.3.1",

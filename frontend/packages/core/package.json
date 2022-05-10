@@ -26,5 +26,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@sitecore-jss/sitecore-jss-react": "^20.0.1"
   }
 }
