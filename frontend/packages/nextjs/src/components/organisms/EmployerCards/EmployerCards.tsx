@@ -3,7 +3,6 @@ import {
   Field,
   GetStaticComponentProps,
   GraphQLRequestClient,
-  JSS_MODE_DISCONNECTED,
   useComponentProps,
   ComponentRendering,
 } from '@sitecore-jss/sitecore-jss-nextjs';
@@ -72,10 +71,6 @@ export default function EmployerCards({ rendering }: EmployerCardsProps): JSX.El
 }
 
 export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
-  if (process.env.JSS_MODE === JSS_MODE_DISCONNECTED) {
-    return null;
-  }
-
   const graphQLClient = new GraphQLRequestClient(config.graphQLEndpoint, {
     apiKey: config.sitecoreApiKey,
   });
