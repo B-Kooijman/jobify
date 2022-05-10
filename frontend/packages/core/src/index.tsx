@@ -1,1 +1,2 @@
-export { ContentBlock, type ContentBlockProps } from "./molecules";
+export * from "./atoms";
+export * from "./molecules";
