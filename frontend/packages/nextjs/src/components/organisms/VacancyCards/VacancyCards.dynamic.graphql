@@ -5,10 +5,7 @@ fragment friendlyUrl on DetailRoute {
 }
 
 query VacancyCard($language: String!) {
-  item(
-    path: "/sitecore/content/Global Repository/Vacancies"
-    language: $language
-  ) {
+  item(path: "/sitecore/content/Global Repository/Vacancies", language: $language) {
     id
     hasChildren
     children(
@@ -25,7 +22,7 @@ query VacancyCard($language: String!) {
           title {
             value
           }
-					...friendlyUrl
+          ...friendlyUrl
           relatedEmployer {
             targetItem {
               id

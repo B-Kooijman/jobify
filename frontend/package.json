@@ -6,17 +6,17 @@
   "workspaces": [
     "packages/*"
   ],
-  "dependencies": {},
   "devDependencies": {
-    "turbo": "^1.2.8"
+    "nx": "14.1.4"
   },
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "graph": "turbo run build --graph",
-    "lint": "turbo run lint",
-    "test": "turbo run test",
-    "clean": "turbo run clean && rm -rf node_modules"
+    "build": "nx run-many --target=build --all",
+    "build:since": "nx affected --target=build",
+    "dev": "nx run-many --target=dev --all",
+    "graph": "nx graph",
+    "lint": "nx run-many --target=lint --all",
+    "test": "nx run-many --target=test --all",
+    "clean": "nx run-many --target=clean --all && rm -rf node_modules"
   },
   "repository": {
     "type": "git",

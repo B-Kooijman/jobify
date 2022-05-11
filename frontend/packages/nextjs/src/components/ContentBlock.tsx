@@ -1,3 +1,3 @@
-import { ContentBlock } from "@jobify/core";
+import { ContentBlock } from '@jobify/core';
 
 export default ContentBlock;

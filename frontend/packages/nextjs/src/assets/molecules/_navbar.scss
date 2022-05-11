@@ -5,10 +5,10 @@ nav.navbar {
   align-items: center;
   font-size: 2rem;
   margin-bottom: 30px;
-  
+
   a {
     color: var(--color-text);
-    &:hover{
+    &:hover {
       color: var(--color-primary);
     }
   }
@@ -27,8 +27,8 @@ nav.navbar {
       }
 
       a::before {
-        content: "";
-        position: absolute;            
+        content: '';
+        position: absolute;
         height: 3px;
         right: 0px;
         bottom: -3px;
@@ -40,16 +40,20 @@ nav.navbar {
         color: var(--color-primary);
 
         &::before {
-            background: linear-gradient(to right, var(--color-secondary) 40%, var(--color-primary) 75%);               
+          background: linear-gradient(
+            to right,
+            var(--color-secondary) 40%,
+            var(--color-primary) 75%
+          );
         }
       }
+    }
   }
-}
 
   ul li {
     margin-right: 20px;
     &:last-child {
-        margin-right: 0px;
+      margin-right: 0px;
     }
   }
 }

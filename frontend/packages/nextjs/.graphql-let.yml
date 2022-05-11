@@ -6,4 +6,4 @@ plugins:
   - typed-document-node
 cacheDir: .generated
 config:
-    useIndexSignature: true
+  useIndexSignature: true

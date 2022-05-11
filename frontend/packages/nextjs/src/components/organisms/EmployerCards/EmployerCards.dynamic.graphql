@@ -6,7 +6,7 @@ fragment title on Content_Title {
 }
 
 query EmployerCards($language: String!, $relatedEmployer: String!) {
-    relatedEmployer: item(path: $relatedEmployer, language: $language) {
+  relatedEmployer: item(path: $relatedEmployer, language: $language) {
     id
     ... on IEmployer {
       ...title
@@ -27,7 +27,7 @@ query EmployerCards($language: String!, $relatedEmployer: String!) {
     }
   ) {
     total
-    
+
     vacancies: results {
       id
       ... on IVacancy {
