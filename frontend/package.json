@@ -10,7 +10,7 @@
     "nx": "14.1.4"
   },
   "scripts": {
-    "build": "nx run-many --target=build --all",
+    "build": "nx run-many --target=build --projects=core,nextjs,remix",
     "build:since": "nx affected --target=build",
     "dev": "nx run-many --target=dev --all",
     "graph": "nx graph",

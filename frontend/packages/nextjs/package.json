@@ -1,5 +1,5 @@
 {
-  "name": "jobify-nextjs",
+  "name": "@jobify/nextjs",
   "description": "Application utilizing Sitecore JavaScript Services and Next.js",
   "version": "18.0.0",
   "private": true,
