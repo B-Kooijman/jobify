@@ -1,6 +1,6 @@
 const jssConfig = require('./src/temp/config');
 const packageConfig = require('./package.json').config;
-
+const withNx = require('@nrwl/next/plugins/with-nx');
 // A public URL (and uses below) is required for Sitecore Experience Editor support.
 // This is set to http://localhost:3000 by default. See .env for more details.
 const publicUrl = process.env.PUBLIC_URL;
@@ -11,6 +11,9 @@ const nextConfig = {
 
   // Allow specifying a distinct distDir when concurrently running app in a container
   distDir: process.env.NEXTJS_DIST_DIR || '.next',
+
+  //TODO: used by custom NX server to construct path to public folder, determine if this is the correct outdir. (Not documented)
+  outdir: '.next',
 
   // Make the same PUBLIC_URL available as an environment variable on the client bundle
   env: {
@@ -24,6 +27,11 @@ const nextConfig = {
     // This is the locale that will be used when visiting a non-locale
     // prefixed path e.g. `/styleguide`.
     defaultLocale: packageConfig.language,
+  },
+  nx: {
+    // Set this to true if you would like to to use SVGR
+    // See: https://github.com/gregberge/svgr
+    svgr: false,
   },
 
   async rewrites() {
@@ -87,4 +95,4 @@ const applyGraphQLCodeGenerationLoaders = (config, options) => {
   return config;
 };
 
-module.exports = nextConfig;
+module.exports = () => withNx(nextConfig);
