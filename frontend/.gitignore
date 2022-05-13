@@ -5,7 +5,6 @@ node_modules
 /public/build
 .env
 
-.turbo
 + build/**
 + dist/**
 + .next/**

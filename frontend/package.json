@@ -6,10 +6,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "dependencies": {},
-  "devDependencies": {
-    "turbo": "^1.2.8"
-  },
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
